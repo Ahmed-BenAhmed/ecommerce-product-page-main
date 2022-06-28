@@ -14,8 +14,8 @@ const Header = ({headerInfo, product, qInCart,setQInCart}) => {
                 <div className={`navbar ${menuIsOpen ? "" : "closed-navbar"}`}>
                     <ul className="nav-items">
                         <CloseIcon className="close-icon icon" onClick={()=> setMenuIsOpen(false)} />
-                        {headerInfo.navItems.map((navItem,i)=><li className="nav-item">
-                            <a key={"navItem"+i} className="nav-link" href="#">
+                        {headerInfo.navItems.map((navItem,index)=><li className="nav-item">
+                            <a key={"navItem"+index} className="nav-link" href="#">
                             {navItem}
                             </a>
                         </li>)}
